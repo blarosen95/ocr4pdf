@@ -11,10 +11,14 @@ jobs:
 
       - name: Checkout copy
         uses: actions/checkout@v3
-      - name: Install system dependencies
+      - name: Install system dependencies for gem
         run: sudo apt -y install poppler-utils tesseract-ocr
       - name: Add OEM english LSTM model
         run: sudo wget https://github.com/tesseract-ocr/tessdata/raw/main/eng.traineddata -O $(sudo find /usr -name tessdata -type d)/eng.traineddata
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
       - name: Run tests
         run: bundle exec rspec
       - name: Coveralls
