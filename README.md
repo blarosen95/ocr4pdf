@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/blarosen95/ocr4pdf/badge.svg?branch=main)](https://coveralls.io/github/blarosen95/ocr4pdf?branch=main)
+
 # Ocr4pdf
 
 System dependencies include:
