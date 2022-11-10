@@ -1,5 +1,14 @@
 # frozen_string_literal: true
 
+require "simplecov"
+
+SimpleCov.start do
+  add_filter do |source_file|
+    source_file.filename.include?("spec") && !source_file.filename.include?("fixture")
+  end
+  add_filter %r{/.bundle/}
+end
+
 require "ocr4pdf"
 
 RSpec.configure do |config|
