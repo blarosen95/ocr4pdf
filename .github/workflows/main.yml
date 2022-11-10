@@ -14,7 +14,7 @@ jobs:
       - name: Install system dependencies
         run: sudo apt -y install poppler-utils tesseract-ocr
       - name: Add OEM english LSTM model
-        run: wget https://github.com/tesseract-ocr/tessdata/raw/main/eng.traineddata -O $(sudo find /usr -name tessdata -type d)/eng.traineddata
+        run: sudo wget https://github.com/tesseract-ocr/tessdata/raw/main/eng.traineddata -O $(sudo find /usr -name tessdata -type d)/eng.traineddata
       - name: Run tests
         run: bundle exec rspec
       - name: Coveralls
