@@ -31,7 +31,7 @@ class Ocr4pdf
             # Create a TIFF file for the page:
             Open3.capture2("pdftocairo -singlefile -f #{page} -l #{page} -tiff #{src} #{base_name}")
             # Run Tesseract on the TIFF, exporting as a PDF:
-            Open3.capture2("tesseract --dpi 300 #{base_name}.tif #{base_name} pdf quiet")
+            Open3.capture2("tesseract #{base_name}.tif #{base_name} pdf quiet")
           end
           # Unite the pages into a single PDF:
           Open3.capture2("pdfunite #{tmp_dir}/*.pdf #{File.basename(src, ".*")}.ocr.pdf")
