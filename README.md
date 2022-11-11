@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/blarosen95/ocr4pdf/badge.svg?branch=main)](https://coveralls.io/github/blarosen95/ocr4pdf?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/blarosen95/ocr4pdf/badge.svg?branch=main)](https://coveralls.io/github/blarosen95/ocr4pdf?branch=main) [![Gem Version](https://badge.fury.io/rb/ocr4pdf.svg)](https://badge.fury.io/rb/ocr4pdf)
 
 # Ocr4pdf
 
